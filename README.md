@@ -56,11 +56,14 @@ Confounding variables and outliers will be carefully considered to ensure the ac
 o	Import match outcomes and player attributes data into a Pandas DataFrame.
 **2.	Preprocess Data:**
 o	Handle missing values, standardize units (e.g., height in centimeters, weight in kilograms).
+
 o	Merge datasets based on player names and match dates to create a unified dataset for analysis.
 **3. Visualization:**
 -	Exploratory Data Analysis (EDA):
 o	Use scatter plots, heatmaps, and time series plots to explore relationships between player ranking, performance metrics, and match outcomes.
+
 o	Examples include:
+
 	Scatter plot of player ranking vs. match outcomes in early and later rounds.
 	Heatmap showing correlations between all variables.
 	Time series plot comparing performance trends over the tournament period.
@@ -69,6 +72,7 @@ o	Examples include:
 ## Hypothesis Testing:
 **1.	Test Hypothesis:**
 o	Null Hypothesis (H₀): There is no significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players do not have a higher success rate in the early rounds, and lower-ranked players do not excel in the later rounds.
+
 o	Alternative Hypothesis (H₁): There is a significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds.
 
 **2.	Regression Analysis:**
