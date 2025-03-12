@@ -1,16 +1,16 @@
-# DSA210-PROJECT
+ DSA210-PROJECT
 
 ## Project Idea and Aim
 In this project, I will be analyzing the factors that influence tennis match outcomes by examining player attributes such as height, weight, ranking, and various performance metrics. The aim of this project is to explore how these player attributes influence match outcomes and performance in tennis. I will be using data from Grand Slam and ATP 1000 Masters tournaments over the last 20 years (2003-2023) and enriching it with detailed player attributes.
 
 There will be one main hypothesis tested:
 
-**Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds**
+**Higher first serve percentages give a higher rate of match wins**
 
 ## Hypothesis
-**Null Hypothesis (H₀):** There is no significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players do not have a higher success rate in the early rounds, and lower-ranked players do not excel in the later rounds.
+**Null Hypothesis (H₀):** There is no significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages do not significantly affect the rate of match wins.
 
-**Alternative Hypothesis (H₁):** There is a significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds.
+**Alternative Hypothesis (H₁):** There is a significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages significantly increase the rate of match wins.
 
 ## Data Collection and Sources
 Data collection will focus on Grand Slam and ATP 1000 Masters tournaments held between the years 2003-2023.
@@ -18,8 +18,8 @@ Player attribute data will be sourced from the Ultimate Tennis Matches Dataset o
 
 **Player Attributes:**
 
-1. Player Ranking: ATP ranking of each player.
-2. First Serve Percentage: The percentage of successful first serves.
+1. First Serve Percentage: The percentage of successful first serves.
+2. Player Ranking: ATP ranking of each player.
 3. Second Serve Percentage: The percentage of successful second serves.
 4. Break Points Saved: Number of break points saved during matches.
 5. Aces: Number of aces served during matches.
@@ -63,16 +63,26 @@ Match data will be sourced from the Ultimate Tennis Statistics website.
 
 ### Visualization:
 **Exploratory Data Analysis (EDA):**
-1. Use scatter plots, heatmaps, and time series plots to explore relationships between player ranking, performance metrics, and match outcomes.
+1. Use scatter plots, heatmaps, and time series plots to explore relationships between first serve percentage, performance metrics, and match outcomes.
 2. Examples include:
-   - Scatter plot of player ranking vs. match outcomes in early and later rounds.
+   - Scatter plot of first serve percentage vs. match win rate.
    - Heatmap showing correlations between all variables.
    - Time series plot comparing performance trends over the tournament period.
 
 ## Hypothesis Testing:
 1. **Test Hypothesis:**
-   - Null Hypothesis (H₀): There is no significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players do not have a higher success rate in the early rounds, and lower-ranked players do not excel in the later rounds.
-   - Alternative Hypothesis (H₁): There is a significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds.
+   - Null Hypothesis (H₀): There is no significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages do not significantly affect the rate of match wins.
+   - Alternative Hypothesis (H₁): There is a significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages significantly increase the rate of match wins.
 
 2. **Regression Analysis:**
-   - Run regression analysis to identify the strongest predictors of match outcomes, focusing on player ranking and performance metrics like first serve percentage, second serve percentage, break points saved, 
+   - Run regression analysis to identify the strongest predictors of match outcomes, focusing on first serve percentage and other performance metrics.
+
+## Conclusion
+By the end of this project, I hope to answer the following questions:
+- Does first serve percentage significantly influence match win rates?
+- Which performance metrics are key predictors of match wins?
+- What are the key factors that predict match outcomes in ATP tournaments?
+
+This project aims to leverage data science to gain insights into tennis performance, providing valuable information for players, coaches, and analysts. Understanding the factors behind match outcomes is key to optimizing strategies and achieving success in sports and beyond.
+
+Through this analysis, I will apply the concepts learned in my data science course to a real-world scenario. The findings from this project will contribute to developing targeted training practices and match strategies, ultimately improving tennis performance.
