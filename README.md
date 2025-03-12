@@ -18,23 +18,15 @@ Player attribute data will be sourced from the Ultimate Tennis Matches Dataset o
 
 **Player Attributes:**
 
-1.Player Ranking: ATP ranking of each player.
-
-2.First Serve Percentage: The percentage of successful first serves.
-
-3.Second Serve Percentage: The percentage of successful second serves.
-
-4.Break Points Saved: Number of break points saved during matches.
-
-5.Aces: Number of aces served during matches.
-
-6.Player Height: The height of each player in centimeters.
-
-7.Player Weight: The weight of each player in kilograms.
-
-8.Playing Hand: Whether the player is right-handed or left-handed.
-
-9.Player Age: The age of each player at the time of the tournament
+1. Player Ranking: ATP ranking of each player.
+2. First Serve Percentage: The percentage of successful first serves.
+3. Second Serve Percentage: The percentage of successful second serves.
+4. Break Points Saved: Number of break points saved during matches.
+5. Aces: Number of aces served during matches.
+6. Player Height: The height of each player in centimeters.
+7. Player Weight: The weight of each player in kilograms.
+8. Playing Hand: Whether the player is right-handed or left-handed.
+9. Player Age: The age of each player at the time of the tournament
 
 Match data will be sourced from the Ultimate Tennis Statistics website.
 
