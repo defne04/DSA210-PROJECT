@@ -8,9 +8,9 @@ There will be one main hypothesis tested:
 Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds
 
 ## Hypothesis
-Null Hypothesis (H₀): There is no significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players do not have a higher success rate in the early rounds, and lower-ranked players do not excel in the later rounds.
+**Null Hypothesis (H₀):** There is no significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players do not have a higher success rate in the early rounds, and lower-ranked players do not excel in the later rounds.
 
-Alternative Hypothesis (H₁): There is a significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds.
+**Alternative Hypothesis (H₁):** There is a significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds.
 
 ## Data Collection and Sources
 Data collection will focus on Grand Slam and ATP 1000 Masters tournaments held between the years 2003-2023.
