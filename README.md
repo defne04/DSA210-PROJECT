@@ -42,14 +42,14 @@ Match data will be sourced from the Ultimate Tennis Statistics website.
 ## Project Plan
 **Data Collection:**
 1.	Data Collection Period:
-o	Data will be collected from historical Grand Slam and ATP 1000 Masters tournaments held between 2003-2023.
+Data will be collected from historical Grand Slam and ATP 1000 Masters tournaments held between 2003-2023.
 2.	Sources:
-o	Match Outcomes: Data will be obtained from the Ultimate Tennis Matches Dataset.
-o	Player Attributes: Data will be obtained from Ultimate Tennis Statistics.
+Match Outcomes: Data will be obtained from the Ultimate Tennis Matches Dataset.
+Player Attributes: Data will be obtained from Ultimate Tennis Statistics.
 3.	Ensuring Consistency:
-o	Data will be systematically organized and accessible.
-o	Information will be recorded and merged based on player names and match dates.
-o	Confounding variables and outliers will be carefully considered to ensure the accuracy and reliability of the analysis.
+Data will be systematically organized and accessible.
+Information will be recorded and merged based on player names and match dates.
+Confounding variables and outliers will be carefully considered to ensure the accuracy and reliability of the analysis.
 
 ## Data Import and Preprocessing:
 1.	Import Data:
