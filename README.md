@@ -4,7 +4,8 @@
 In this project, I will be analyzing the factors that influence tennis match outcomes by examining player attributes such as height, weight, ranking, and various performance metrics. The aim of this project is to explore how these player attributes influence match outcomes and performance in tennis. I will be using data from Grand Slam and ATP 1000 Masters tournaments over the last 20 years (2003-2023) and enriching it with detailed player attributes.
 
 There will be one main hypothesis tested:
-•	Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds
+
+Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds
 
 ## Hypothesis
 Null Hypothesis (H₀): There is no significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players do not have a higher success rate in the early rounds, and lower-ranked players do not excel in the later rounds.
