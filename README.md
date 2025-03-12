@@ -41,24 +41,24 @@ Match data will be sourced from the Ultimate Tennis Statistics website.
 
 ## Project Plan
 **Data Collection:**
-1.	Data Collection Period:
+**1.	Data Collection Period:**
 Data will be collected from historical Grand Slam and ATP 1000 Masters tournaments held between 2003-2023.
-2.	Sources:
+**2.	Sources:**
 Match Outcomes: Data will be obtained from the Ultimate Tennis Matches Dataset.
 Player Attributes: Data will be obtained from Ultimate Tennis Statistics.
-3.	Ensuring Consistency:
+**3.	Ensuring Consistency:**
 Data will be systematically organized and accessible.
 Information will be recorded and merged based on player names and match dates.
 Confounding variables and outliers will be carefully considered to ensure the accuracy and reliability of the analysis.
 
 ## Data Import and Preprocessing:
-1.	Import Data:
+**1.	Import Data:**
 o	Import match outcomes and player attributes data into a Pandas DataFrame.
-2.	Preprocess Data:
+**2.	Preprocess Data:**
 o	Handle missing values, standardize units (e.g., height in centimeters, weight in kilograms).
 o	Merge datasets based on player names and match dates to create a unified dataset for analysis.
-Visualization:
-1.	Exploratory Data Analysis (EDA):
+**3. Visualization:**
+-	Exploratory Data Analysis (EDA):
 o	Use scatter plots, heatmaps, and time series plots to explore relationships between player ranking, performance metrics, and match outcomes.
 o	Examples include:
 	Scatter plot of player ranking vs. match outcomes in early and later rounds.
@@ -67,9 +67,9 @@ o	Examples include:
 
 
 ## Hypothesis Testing:
-1.	Test Hypothesis:
+**1.	Test Hypothesis:**
 o	Null Hypothesis (H₀): There is no significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players do not have a higher success rate in the early rounds, and lower-ranked players do not excel in the later rounds.
 o	Alternative Hypothesis (H₁): There is a significant relationship between player ranking and their success rate in different rounds of the tournament. Higher-ranked players have a higher success rate in the early rounds, while lower-ranked players excel in the later rounds.
 
-2.	Regression Analysis:
+**2.	Regression Analysis:**
 o	Run regression analysis to identify the strongest predictors of match outcomes, focusing on player ranking and performance metrics like first serve percentage, second serve percentage, break points saved, and aces.
