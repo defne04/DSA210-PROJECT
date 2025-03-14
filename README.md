@@ -85,4 +85,4 @@ By the end of this project, I hope to answer the following questions:
 
 This project aims to leverage data science to gain insights into tennis performance, providing valuable information for players, coaches, and analysts. Understanding the factors behind match outcomes is key to optimizing strategies and achieving success in sports and beyond.
 
-Through this analysis, I will apply the concepts learned in my data science course to a real-world scenario. The findings from this project will contribute to developing targeted training practices and match strategies, ultimately improving tennis performance.
+Through this analysis, I will apply the concepts learned in my data science course to a real-world scenario. The findings from this project will contribute to developing targeted training practices and match strategies, ultimately improving tennis performance🎾
