@@ -1,88 +1,123 @@
-# DSA210-PROJECT
+# **DSA210-PROJECT: Surface Type and Tennis Performance**
 
-## Project Idea and Aim
-In this project, I will be analyzing the factors that influence tennis match outcomes by examining player attributes such as height, weight, ranking, and various performance metrics. The aim of this project is to explore how these player attributes influence match outcomes and performance in tennis. I will be using data from Grand Slam and ATP 1000 Masters tournaments over the last 20 years (2003-2023) and enriching it with detailed player attributes.
+## **Project Overview**
+This project investigates how surface type (clay, grass, hard court) influences key tennis performance metrics. Specifically, I aim to uncover whether players tend to stay longer in matches and make more mistakes (e.g., double faults, unforced errors) on certain surfaces. By analyzing match duration, player mistakes, and surface-specific trends, I will explore the ways different court types affect gameplay.
 
-There will be one main hypothesis tested:
+The approach includes gathering data on match duration and errors across surfaces, exploring patterns using statistical tools, and testing hypotheses to identify surface-specific challenges. The findings will provide actionable insights for optimizing strategies tailored to different court types.
 
-**Higher first serve percentages give a higher rate of match wins**
+---
 
-## Hypothesis
-**Null Hypothesis (H₀):** There is no significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages do not significantly affect the rate of match wins.
+## **Objectives**
+### *Understand Surface Dynamics*
+- Investigate how surface type affects match duration and mistake rates (e.g., double faults, unforced errors).
 
-**Alternative Hypothesis (H₁):** There is a significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages significantly increase the rate of match wins.
+### *Identify Behavioral Patterns*
+- Determine whether certain surfaces, like clay and grass, are associated with longer matches or higher mistake rates compared to hard courts.
 
-## Data Collection and Sources
-Data collection will focus on Grand Slam and ATP 1000 Masters tournaments held between the years 2003-2023.
-Player attribute data will be sourced from the Ultimate Tennis Matches Dataset on Kaggle.
+### *Apply Data Science Techniques*
+- Utilize data analysis and visualization methods to validate hypotheses and uncover trends in tennis performance.
 
-**Player Attributes:**
+---
 
-1. First Serve Percentage: The percentage of successful first serves.
-2. Player Ranking: ATP ranking of each player.
-3. Second Serve Percentage: The percentage of successful second serves.
-4. Break Points Saved: Number of break points saved during matches.
-5. Aces: Number of aces served during matches.
-6. Player Height: The height of each player in centimeters.
-7. Player Weight: The weight of each player in kilograms.
-8. Playing Hand: Whether the player is right-handed or left-handed.
-9. Player Age: The age of each player at the time of the tournament
+## **Motivation**
+This project combines my interests in **sports analytics** and **data science**. Here's why it matters:
 
-Match data will be sourced from the Ultimate Tennis Statistics website.
+### *Strategic Insight*
+Understanding how different surfaces influence match dynamics can provide insights into player behavior, helping to improve training and preparation for matches.
 
-**Match Data:**
+### *Data-Driven Analysis*
+This project focuses on using statistical methods to uncover patterns in tennis performance, ensuring that the insights are objective and actionable.
 
-1. Match Outcome: The result of each match (win/loss) for individual players.
-2. Tournament Name: The name of the tournament.
-3. Match Date: The date when the match was played.
-4. Round: The stage of the tournament (e.g., first round, quarter-final, final).
-5. Opponent Ranking: The ranking of the opponent at the time of the match.
-6. Surface Type: The type of surface on which the match was played (e.g., clay, grass, hard court).
+### *Real-World Application*
+The findings from this project will benefit players, coaches, and analysts by offering evidence-based strategies for surface-specific adjustments.
 
-## Project Plan
-### Data Collection:
-1. **Data Collection Period:**
-   - Data will be collected from historical Grand Slam and ATP 1000 Masters tournaments held between 2003-2023.
+---
 
-2. **Sources:**
-   - Match Outcomes: Data will be obtained from the Ultimate Tennis Matches Dataset.
-   - Player Attributes: Data will be obtained from Ultimate Tennis Statistics.
+## **Dataset**
+### *Data Collection Sources*
+- Data will be collected from **Grand Slam and ATP 1000 Masters tournaments** spanning from 2003 to 2023.
+- Player performance data and match statistics will be sourced from **Kaggle** and **Ultimate Tennis Statistics**.
 
-3. **Ensuring Consistency:**
-   - Data will be systematically organized and accessible.
-   - Information will be recorded and merged based on player names and match dates.
-   - Confounding variables and outliers will be carefully considered to ensure the accuracy and reliability of the analysis.
+### **Features Tracked**
+#### Player Attributes
+1. **First Serve Percentage**: Percentage of successful first serves.
+2. **Second Serve Percentage**: Percentage of successful second serves.
+3. **Double Faults**: Number of double faults committed during a match.
+4. **Unforced Errors**: Number of unforced errors recorded.
+5. **Break Points Saved**: Number of break points saved.
+6. **Break Points Converted**: Percentage of break points successfully converted.
+7. **Aces**: Number of aces served.
+8. **Return Percentage**: Percentage of successful returns against opponent serves.
+9. **First Serve Speed**: Average speed of the player’s first serves in km/h.
+10. **Second Serve Speed**: Average speed of the player’s second serves in km/h.
+11. **Service Games Won**: Percentage of service games the player won.
+12. **Return Games Won**: Percentage of return games the player won.
+13. **Player Ranking**: ATP ranking of each player.
 
-### Data Import and Preprocessing:
-1. **Import Data:**
-   - Import match outcomes and player attributes data into a Pandas DataFrame.
+#### Match Data
+1. **Match Outcome**: Whether the match was won or lost.
+2. **Match Duration**: Total match length (in minutes).
+3. **Surface Type**: The surface on which the match was played (clay, grass, hard court).
+4. **Tournament Name**: Name of the tournament.
 
-2. **Preprocess Data:**
-   - Handle missing values, standardize units (e.g., height in centimeters, weight in kilograms).
-   - Merge datasets based on player names and match dates to create a unified dataset for analysis.
+---
 
-### Visualization:
-**Exploratory Data Analysis (EDA):**
-1. Use scatter plots, heatmaps, and time series plots to explore relationships between first serve percentage, performance metrics, and match outcomes.
-2. Examples include:
-   - Scatter plot of first serve percentage vs. match win rate.
-   - Heatmap showing correlations between all variables.
-   - Time series plot comparing performance trends over the tournament period.
+## **Hypothesis**
+### Null Hypothesis (H₀):
+Surface type does not significantly influence match duration or the frequency of player mistakes (e.g., double faults, unforced errors).
 
-## Hypothesis Testing:
-1. **Test Hypothesis:**
-   - Null Hypothesis (H₀): There is no significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages do not significantly affect the rate of match wins.
-   - Alternative Hypothesis (H₁): There is a significant relationship between a player's first serve percentage and their match win rate. Higher first serve percentages significantly increase the rate of match wins.
+### Alternative Hypothesis (H₁):
+Surface type significantly influences match duration and the frequency of player mistakes (e.g., double faults, unforced errors).
 
-2. **Regression Analysis:**
-   - Run regression analysis to identify the strongest predictors of match outcomes, focusing on first serve percentage and other performance metrics.
+---
 
-## Conclusion
-By the end of this project, I hope to answer the following questions:
-- Does first serve percentage significantly influence match win rates?
-- Which performance metrics are key predictors of match wins?
-- What are the key factors that predict match outcomes in ATP tournaments?
+## **Tools and Technologies**
+I will utilize the following tools for data analysis and visualization:
+1. **Python**: For data preprocessing, statistical analysis, and visualization.
+2. **Pandas**: To manipulate and clean datasets.
+3. **Matplotlib and Seaborn**: To create visualizations like scatter plots, bar charts, and heatmaps.
+4. **SciPy**: For hypothesis testing and regression analysis.
 
-This project aims to leverage data science to gain insights into tennis performance, providing valuable information for players, coaches, and analysts. Understanding the factors behind match outcomes is key to optimizing strategies and achieving success in sports and beyond.
+---
 
-Through this analysis, I will apply the concepts learned in my data science course to a real-world scenario. The findings from this project will contribute to developing targeted training practices and match strategies, ultimately improving tennis performance🎾
+## **Analysis Plan**
+### *Data Collection and Preprocessing*
+1. Gather datasets from **Kaggle** and **Ultimate Tennis Statistics**.
+2. Import data into a Pandas DataFrame.
+3. Handle missing values, standardize formats (e.g., converting percentages to decimals), and ensure data consistency.
+
+### *Exploratory Data Analysis (EDA)*
+1. Use scatter plots, heatmaps, and bar charts to explore relationships between surface type, match duration, and player mistakes.
+   - Examples:
+     - **Scatter Plot**: Match duration vs. surface type.
+     - **Bar Chart**: Average double faults across clay, grass, and hard court surfaces.
+     - **Heatmap**: Correlation between surface type, unforced errors, and match duration.
+
+### *Hypothesis Testing*
+1. Test the hypothesis:
+   - **Null Hypothesis (H₀):** Surface type does not significantly affect match duration or player mistakes.
+   - **Alternative Hypothesis (H₁):** Surface type significantly impacts match duration and player mistakes.
+2. Perform **ANOVA tests** to compare means of match duration and mistake rates across surfaces.
+3. Use **regression analysis** to assess the influence of surface type on player mistakes and match duration.
+
+### *Trend Analysis*
+1. Analyze trends in match duration and mistakes across different surfaces over time.
+2. Investigate correlations between **player ranking** and mistake rates for matches on clay, grass, and hard court surfaces.
+
+---
+
+## **Example Analysis**
+### To Illustrate:
+- Create a **scatter plot** comparing match duration on clay, grass, and hard court surfaces. This will highlight whether clay leads to longer matches due to slower rally speeds.
+- Use a **bar chart** to compare average double faults across surfaces, identifying whether grass courts introduce more serving errors due to their unpredictability.
+- Develop a **heatmap** to visualize correlations between unforced errors, match duration, and surface type.
+
+---
+
+## **Conclusion**
+By the end of this project, I aim to address the following questions:
+1. How does surface type influence match duration and player mistakes (e.g., double faults, unforced errors)?
+2. Are mistakes more prevalent on specific surfaces like clay or grass compared to hard courts?
+3. Can these findings inform surface-specific training strategies for players?
+
+This project showcases the role of data science in analyzing sports performance, providing insights that can guide players and coaches to optimize their strategies based on court conditions.
