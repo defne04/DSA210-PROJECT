@@ -1,4 +1,4 @@
-# **DSA210-PROJECT: Surface Type and Tennis Performance**
+# **DSA210-PROJECT: Surface Type and Tennis Performance** 🎾
 
 ## **Project Overview**
 This project investigates how surface type (clay, grass, hard court) influences key tennis performance metrics. Specifically, I aim to uncover whether players tend to stay longer in matches and make more mistakes (e.g., double faults, unforced errors) on certain surfaces. By analyzing match duration, player mistakes, and surface-specific trends, I will explore the ways different court types affect gameplay.
