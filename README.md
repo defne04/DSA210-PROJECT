@@ -1,7 +1,7 @@
 # **DSA210-PROJECT: Surface Type and Tennis Performance** 🎾
 
 ## **Project Overview**
-This project investigates how surface type (clay, grass, hard court) influences key tennis performance metrics. Specifically, I aim to uncover whether players tend to stay longer in matches and make more mistakes (e.g., double faults, unforced errors) on certain surfaces. By analyzing match duration, player mistakes, and surface-specific trends, I will explore the ways different court types affect gameplay.
+This project investigates how surface type (clay, grass, hard court) influences key tennis performance metrics. Specifically, I aim to uncover whether players tend to stay longer in matches and make more mistakes (e.g., double faults, unforced errors) on certain surfaces. By analyzing match duration, player mistakes, and surface types, I will explore the ways different court types affect gameplay.
 
 The approach includes gathering data on match duration and errors across surfaces, exploring patterns using statistical tools, and testing hypotheses to identify surface-specific challenges. The findings will provide actionable insights for optimizing strategies tailored to different court types.
 
@@ -16,20 +16,6 @@ The approach includes gathering data on match duration and errors across surface
 
 ### *Apply Data Science Techniques*
 - Utilize data analysis and visualization methods to validate hypotheses and uncover trends in tennis performance.
-
----
-
-## **Motivation**
-This project combines my interests in **sports analytics** and **data science**. Here's why it matters:
-
-### *Strategic Insight*
-Understanding how different surfaces influence match dynamics can provide insights into player behavior, helping to improve training and preparation for matches.
-
-### *Data-Driven Analysis*
-This project focuses on using statistical methods to uncover patterns in tennis performance, ensuring that the insights are objective and actionable.
-
-### *Real-World Application*
-The findings from this project will benefit players, coaches, and analysts by offering evidence-based strategies for surface-specific adjustments.
 
 ---
 
