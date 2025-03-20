@@ -103,7 +103,9 @@ I will utilize the following tools for data analysis and visualization:
 ## **Conclusion**
 By the end of this project, I aim to address the following questions:
 1. How does surface type influence match duration and player mistakes (e.g., double faults, unforced errors)?
-2. Are mistakes more prevalent on specific surfaces like clay or grass compared to hard courts?
-3. Can these findings inform surface-specific training strategies for players?
+2. Are mistakes(e.g., double faults, unforced errors) more prevalent on specific surfaces like clay or grass compared to hard courts?
+3. How does surface type impact the effectiveness of serves, measured by first serve percentage, second serve percentage, and aces?
+4. Do players with higher return percentages perform better on slower surfaces like clay compared to faster surfaces like grass and hard courts?
+5. Which features (e.g., first serve success, rally length) contribute most to match outcomes on grass versus clay or hard courts?
 
 This project showcases the role of data science in analyzing sports performance, providing insights that can guide players and coaches to optimize their strategies based on court conditions.
