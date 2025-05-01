@@ -71,6 +71,7 @@ I will utilize the following tools for data analysis and visualization:
 1. Gather datasets from **Kaggle** and **Ultimate Tennis Statistics**.
 2. Import data into a Pandas DataFrame.
 3. Handle missing values, standardize formats (e.g., converting percentages to decimals), and ensure data consistency.
+4. The preprocessing process of data is further explained in the following: data_process.ipynb
 
 ### *Exploratory Data Analysis (EDA)*
 1. Use scatter plots, heatmaps, and bar charts to explore relationships between surface type, match duration, and player mistakes.
