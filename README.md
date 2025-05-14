@@ -95,11 +95,4 @@ This study provides insights into how tennis surfaces impact player performance.
 
 ---
 
-## **Reproducibility**
-- **Codebase:** Available in GitHub repository.  
-- **Preprocessing Steps:** Fully documented in [data_process.ipynb](https://github.com/defne04/DSA210-PROJECT/blob/main/data_process.ipynb).  
-- **Statistical Tests & Visualizations:** Included in project notebooks.  
 
----
-
-This version keeps all the structured elements while incorporating details from your original README. It’s clear, informative, and optimized for readability. You can copy and paste this directly into your GitHub README file! 🚀 Let me know if you’d like any tweaks.  
