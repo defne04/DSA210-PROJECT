@@ -7,16 +7,17 @@ This project investigates how surface type (clay, grass, hard court) influences 
 
 ## **Objectives & Research Questions**
 ### **Objectives**
-- **Understand Surface Dynamics:** Investigate how surface type affects match duration and mistake rates (e.g., double faults, unforced errors).
-- **Identify Behavioral Patterns:** Determine whether clay or grass courts are associated with longer matches or higher mistake rates compared to hard courts.
-- **Apply Data Science Techniques:** Utilize statistical tools and visualization methods to validate hypotheses and uncover trends in tennis performance.
+- **Understand Surface Dynamics:** Explore how surface type influences match dynamics.
+- **Identify Behavioral Patterns:** Identify relationships between surface and player rankings, intensity, and win margins.
+- **Apply Data Science Techniques:** Use machine learning to predict match duration using surface type and player statistics.
+
 
 ### **Key Research Questions**
-1. **How does surface type influence player rankings?**
-2. **Are mistakes (e.g., double faults, unforced errors) more frequent on specific surfaces?**
-3. **What trends exist in match duration across surfaces over time?**
-4. **How does surface type impact match competitiveness?**
-5. **Which surface has the highest win margin?**
+1. **How does match intensity vary by surface?**
+2. **Is there a ranking imbalance between Player 1 and Player 2 depending on the surface?**
+3. **What are the long-term trends for different surfaces?**
+4. **Are certain surfaces linked to longer match durations?**
+5. **Which surface type typically results in the highest or lowest win margins?**
 
 ---
 
@@ -25,26 +26,35 @@ This project investigates how surface type (clay, grass, hard court) influences 
 - **Sources:** Kaggle & Ultimate Tennis Statistics.
 - **Key Features:**
 
-| Surface Type | Match Duration (min) | Double Faults | Unforced Errors |
-|-------------|--------------------|--------------|----------------|
-| Clay        | 155                | 5.4          | 30.2           |
-| Grass       | 124                | 4.1          | 24.8           |
-| Hard Court  | 136                | 4.8          | 28.0           |
+| Feature                | Description                                 |
+|------------------------|---------------------------------------------|
+| Surface                | Type of tennis court (Clay, Grass, Hard)    |
+| Match Intensity        | Composite metric from duration & stats      |
+| Player 1 / Player 2 Rank | ATP rankings at match time                |
+| Win Margin             | Games difference between winner & loser     |
 
 This dataset covers **10,000+ matches** over a 20-year period.
-
 ---
 
-## **Exploratory Analysis**
+## **📊Exploratory Analysis**
 ### **Key Visuals**
-#### **1. Boxplot: Match Duration by Surface**
+#### **Match Intensity by Surface**
 _Clay courts generally result in longer matches compared to grass and hard courts._
+![](match_indensity.png)
 
-#### **2. Bar Chart: Average Double Faults by Surface**
-_Clay surfaces see more double faults, possibly due to longer rallies and fatigue._
+#### **Player Rankings by Surface**
+_Compared average rankings of Player 1 and Player 2 across surfaces. Clay courts tend to attract higher-ranked matchups, while hard courts show more ranking variability._
+![](player1_ranking.png)
+![](player2_ranking.png)
 
-#### **3. Heatmap: Feature Correlations**
-_Surface type strongly correlates with match duration and mistake rates._
+#### **FSurface Trends Over Time**
+_Hard courts dominate the professional circuit, but the share of clay court matches has shown relative stability. Grass courts remain the least common._
+![](surface_trends.png)
+![](surface_trends2.png)
+
+#### **Average Win Margin by Surface**
+_Matches on clay courts have closer scorelines on average, suggesting more competitive encounters, whereas grass surfaces often result in higher win margins due to faster pace and serve-dominated play._
+![](average_win.png)
 
 ---
 
@@ -73,25 +83,36 @@ _Surface type strongly correlates with match duration and mistake rates._
 3. Handle missing values, standardize formats (e.g., converting percentages to decimals), and ensure data consistency.
 4. The preprocessing process is explained in detail: [data_process.ipynb](https://github.com/defne04/DSA210-PROJECT/blob/main/data_process.ipynb).
 
-### **Exploratory Data Analysis (EDA)**
-1. Use scatter plots, heatmaps, and bar charts to explore relationships between surface type, match duration, and player mistakes.
-2. Example visualizations:
-   - **Scatter Plot:** Match duration vs. surface type.
-   - **Bar Chart:** Average double faults across clay, grass, and hard courts.
-   - **Heatmap:** Correlation between surface type, unforced errors, and match duration.
+## **🤖Machine Learning Model**
 
-### **Hypothesis Testing**
-1. Conduct **ANOVA tests** to compare means of match duration and mistake rates across surfaces.
-2. Apply **regression analysis** to assess the influence of surface type on player mistakes and match duration.
-3. Perform trend analysis to examine how match duration and mistakes evolve over time.
+### **Objective**
+Predict match duration using:
+- Surface type
+- Player rankings
+- Match intensity metrics
+
+### **Model Used**
+- **Linear Regression** (scikit-learn)
+- Encoded categorical variables (e.g., surface)
+- Train/Test Split: 80% training, 20% testing
+
+---
+
+### **Example Predictions**
+
+| Surface     | Player 1 Rank | Player 2 Rank | Match Intensity | Predicted Duration |
+|-------------|----------------|----------------|------------------|---------------------|
+| Clay        | 5              | 15             | High             | 160 minutes         |
+| Grass       | 20             | 30             | Low              | 118 minutes         |
+| Hard Court  | 12             | 14             | Medium           | 137 minutes         |
 
 ---
 
 ## **Conclusion & Next Steps**
 This study provides insights into how tennis surfaces impact player performance. Future improvements could include:
-1. **Expanding the dataset** to include lower-tier tournaments.
-2. **Analyzing player-specific adaptations** to different surfaces.
-3. **Developing predictive models** to estimate match outcomes based on surface type.
+1. Expanding the dataset to include lower-tier tournaments.
+2. Analyzing player-specific adaptations to different surfaces.
+3. Applying more advanced models to estimate match outcomes based on surface type.
 
 ---
 
