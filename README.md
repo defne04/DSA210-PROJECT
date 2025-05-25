@@ -96,7 +96,7 @@ Predict match duration using:
 - Match intensity metrics
 
 ### **Model Used**
-- **Linear Regression** (scikit-learn)
+- **Linear Regression**
 - Encoded categorical variables (e.g., surface)
 - Train/Test Split: 80% training, 20% testing
 
