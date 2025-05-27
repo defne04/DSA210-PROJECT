@@ -5,6 +5,18 @@ This project investigates how surface type (clay, grass, hard court) influences 
 
 ---
 
+## Contents  
+- [Objectives & Research Questions](#objectives-and-research-questions)
+- [Data Sources & Summary](#data-sources-and-summary)
+- [Analysis Plan](#analysis-plan)
+- [Exploratory Analysis](#exploratory-analysis)
+- [Hypotheses & Statistical Tests](#hypotheses-statistical-tests)  
+- [Machine Learning Model](#machine-learning-model)
+- [Results](#results)  
+- [Conclusion & Next Steps](#conclusion-and-next-steps)  
+
+---
+
 ## **Objectives & Research Questions**
 ### **Objectives**
 - **Understand Surface Dynamics:** Explore how surface type influences match dynamics.
