@@ -12,7 +12,6 @@ This project investigates how surface type (clay, grass, hard court) influences 
 - [Exploratory Analysis](#exploratory-analysis)
 - [Hypotheses & Statistical Tests](#hypotheses-statistical-tests)  
 - [Machine Learning Model](#machine-learning-model)
-- [Results](#results)  
 - [Conclusion & Next Steps](#conclusion-and-next-steps)  
 
 ---
@@ -82,9 +81,6 @@ _Matches on clay courts have closer scorelines on average, suggesting more compe
 | Mistakes vs. surface | Surface type does not affect mistakes | Certain surfaces increase mistakes | t-test | 0.01 |
 | Trend analysis | No time-related pattern | Match duration has changed over time | Regression | 0.04 |
 
----
-
-## **Results**
 ### **Findings Summary**
 - **Match Duration:** Clay courts lead to significantly longer matches.
 - **Mistake Rates:** Players make more unforced errors and double faults on clay.
