@@ -95,28 +95,34 @@ _Matches on clay courts have closer scorelines on average, suggesting more compe
 3. Handle missing values, standardize formats (e.g., converting percentages to decimals), and ensure data consistency.
 4. The preprocessing process is explained in detail: [data_process.ipynb](https://github.com/defne04/DSA210-PROJECT/blob/main/data_process.ipynb).
 
-## **🤖Machine Learning Model**
+---
 
-### **Objective**
-Predict match duration using:
-- Surface type
-- Player rankings
-- Match intensity metrics
+## **Machine Learning Model**  
 
-### **Model Used**
-- **Linear Regression**
-- Encoded categorical variables (e.g., surface)
-- Train/Test Split: 80% training, 20% testing
+The ML model process is explained in detail: [ML_model.ipynb](https://github.com/defne04/DSA210-PROJECT/blob/main/ML_model.ipynb).
+
+### **Objective**  
+Predict **match duration** using:  
+- **Surface type** (Encoded for analysis)  
+- **Player rankings** (Rank 1 and Rank 2)  
+- **Historical match intensity** (Derived from score data)  
+
+### **Model Used**  
+- **Random Forest Regressor** (Handles nonlinear relationships between features)  
+- **Encoded categorical variables** (Surface type converted via Label Encoding)  
+- **Train/Test Split:** 80% training, 20% testing  
+- **Evaluation Metrics:**  
+  - **Mean Absolute Error (MAE):** `0.67 sets` (average prediction error)  
+  - **Root Mean Squared Error (RMSE):** `0.86 sets` (standard deviation of prediction errors)  
 
 ---
 
-### **Example Predictions**
-
-| Surface     | Player 1 Rank | Player 2 Rank | Match Intensity | Predicted Duration |
-|-------------|----------------|----------------|------------------|---------------------|
-| Clay        | 5              | 15             | High             | 160 minutes         |
-| Grass       | 20             | 30             | Low              | 118 minutes         |
-| Hard Court  | 12             | 14             | Medium           | 137 minutes         |
+### **Example Predictions**  
+| Surface     | Player 1 Rank | Player 2 Rank | Predicted Match Duration (Sets) |  
+|-------------|----------------|----------------|----------------------------------|  
+| Clay        | 5              | 15             | 4.2                              |  
+| Grass       | 20             | 30             | 3.1                              |  
+| Hard Court  | 12             | 14             | 3.8                              |  
 
 ---
 
