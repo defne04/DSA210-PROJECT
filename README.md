@@ -108,8 +108,8 @@ Predict **match duration** using:
 - **Historical match intensity** (Derived from score data)  
 
 ### **Model Used**  
-- **Random Forest Regressor** (Handles nonlinear relationships between features)  
-- **Encoded categorical variables** (Surface type converted via Label Encoding)  
+- **Random Forest Regressor** 
+- **Encoded categorical variables** 
 - **Train/Test Split:** 80% training, 20% testing  
 - **Evaluation Metrics:**  
   - **Mean Absolute Error (MAE):** `0.67 sets` (average prediction error)  
