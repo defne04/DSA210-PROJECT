@@ -65,20 +65,24 @@ This project investigates the impact of tennis court surfaces (**clay, grass, ha
 
 #### **Match Intensity by Surface**
 _Clay courts generally result in longer matches compared to grass and hard courts._
+
 ![](match_indensity.png)
 
 #### **Player Rankings by Surface**
 _Compared average rankings of Player 1 and Player 2 across surfaces. Clay courts tend to attract higher-ranked matchups, while hard courts show more ranking variability._
+
 ![](player1_ranking.png)
 ![](player2_ranking.png)
 
 #### **Surface Trends Over Time**
 _Hard courts dominate the professional circuit, but the share of clay court matches has shown relative stability. Grass courts remain the least common._
+
 ![](surface_trends.png)
 ![](surface_trends2.png)
 
 #### **Average Win Margin by Surface**
 _Matches on clay courts have closer scorelines on average, suggesting more competitive encounters, whereas grass surfaces often result in higher win margins due to faster pace and serve-dominated play._
+
 ![](average_win.png)
 
 ---
