@@ -125,7 +125,7 @@ _Matches on clay courts have closer scorelines on average, suggesting more compe
 
 ## **Conclusion & Next Steps**  
 
-This study confirms that **surface type significantly influences match duration and mistake rates**, with clay courts resulting in **longer, more error-prone matches**. Future improvements include:  
+This study confirms that **surface type significantly influences match duration and mistake rates**, with clay courts resulting in **longer, more error-prone matches**. Future improvements may include:  
 1. Expanding the dataset to include **lower-tier tournaments**.  
 2. Analyzing **player-specific adaptations** to surfaces.  
 3. Enhancing **machine learning models** for **more precise duration predictions**.  
