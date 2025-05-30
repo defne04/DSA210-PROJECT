@@ -135,5 +135,5 @@ This study confirms that **surface type significantly influences match duration 
 ## **Reproducibility**  
 - **Data Processing Notebook:** [data_process.ipynb](https://github.com/defne04/DSA210-PROJECT/blob/main/data_process.ipynb)  
 - **Machine Learning Model Notebook:** [ML_model.ipynb](https://github.com/defne04/DSA210-PROJECT/blob/main/ML_model.ipynb)  
-- **Project Report:** [DSA210_Project_Report](https://github.com/defne04/DSA210-PROJECT/blob/main/DSA210_Project_Report.pdf)
+- **Project Report:** [DSA210_Project_Report.pdf](https://github.com/defne04/DSA210-PROJECT/blob/main/DSA210_Project_Report.pdf)
   
